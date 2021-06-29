@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PersonalDoctors.Models.Patient>
+@{
+    //ViewData["Title"] = "Список смартфонов";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <title>Магазин смартфонов</title>
+</head>
+<body>
+    <h3>Смартфоны</h3>
+    <table>
+        @foreach (var patient in Model)
+        {
+    <tr>
+        <td>@patient.id</td>
+        <td>@patient.name</td>
+        <td>@patient.surname</td>
+        <td>@patient.patronymic</td>
+        <td>@patient.gender</td>
+        <td>@patient.numberpolicy</td>
+        <td>@patient.numberpassport</td>
+        <td>@patient.phone</td>
+        <td>@patient.photourl</td>
+        <td>@patient.residenceaddress</td>
+        <td>@patient.placeofresidence</td>
+    </tr>
+        }
+    </table>
+</body>
+</html>

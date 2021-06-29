@@ -1,0 +1,18 @@
+﻿<h1>Список</h1>
+<tbody>
+    <tr *ngFor="let p of patients">
+        <ng-template [ngIf]="patient?.id != p.id" [ngIfElse]="edit">
+            <td>{{p?.name}}</td>
+            <td>{{p?.surname}}</td>
+            <td>{{p?.patronymic}}</td>
+            <td>{{p?.gender}}</td>
+            <td>{{p?.email}}</td>
+            <td>{{p?.numberpolicy}}</td>
+            <td>{{p?.numberpassport}}</td>
+            <td>{{p?.phone}}</td>
+            <td>{{p?.photourl}}</td>
+            <td>{{p?.residenceaddress}}</td>
+            <td>{{p?.placeofresidence}}</td>
+        </ng-template>
+    </tr>
+</tbody>

@@ -19,5 +19,6 @@ namespace PersonalDoctors.Models
         public string photourl { get; set; }
         public string residenceaddress { get; set; }
         public string placeofresidence { get; set; }
+
     }
 }
